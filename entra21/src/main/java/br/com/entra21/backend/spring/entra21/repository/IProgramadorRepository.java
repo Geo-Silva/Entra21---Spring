@@ -11,5 +11,6 @@ public interface IProgramadorRepository extends JpaRepository<Programador, Integ
 	//Já o Programador é uma classe, então ele vai lá e executa a classe
 	//Dessa forma, é dado total controle para o JPA
 	//essa Interface é quem controla o CRUD, a criação e resposta de informações para as requisções
+	//precisamos criar ela para a chamar no controller e efetuar o CRUD
 	
 }

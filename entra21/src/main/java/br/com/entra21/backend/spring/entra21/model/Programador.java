@@ -4,10 +4,13 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
 import javax.persistence.Table;
+import javax.persistence.InheritanceType;
 
 @Entity
-@Table(name="programador") //facilita a consulta no Sql
+@Table(name="programador") //dizendo qual table para facilitar a consulta no Sql
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 public class Programador extends MaturidadeNivel3Richardson{
 
 	@Id //identidade da tabela sql
