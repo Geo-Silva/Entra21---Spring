@@ -87,8 +87,8 @@ public class ProgramadorController {
 	@DeleteMapping("/{id}") // É um DELETE, deleta as informações baseado na ID recebida
 	@ResponseStatus(HttpStatus.OK)
 	public @ResponseBody boolean deletar(@PathVariable("id") int param) {
-		// o @PathVariable significa em qual parte da URL o programa irá olhar, nesse
-		// caso, o ID
+		// o @PathVariable significa em qual parte da URL o programa irá olhar
+		// Nesse caso, o ID
 		// Se o mesmo fosse "programador", ele ignoraria o ID e procuraria as
 		// informações na parte de programador
 		programadorRepository.deleteById(param);
